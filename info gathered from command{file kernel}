@@ -1,0 +1,42 @@
+file kernel GRANDPRIMELTE_USA_AIO.pit
+GRANDPRIMELTE_USA_AIO.pit: Partition Information Table for Samsung smartphone, 30 entries; #1 APNHLOS (0x1) "NON-HLOS.bin"; #2 MODEM (0x2) "modem.bin"; #3 SBL1 (0x3) "sbl1.mbn"; #4 DDR (0x4); #5 ABOOT (0x5) "aboot.mbn"; #6 RPM (0x6) "rpm.mbn"; #7 QSEE (0x7) "tz.mbn"; #8 QHEE (0x8) "hyp.mbn"; #9 FSG (0x9); #10 sec (0xa) "sec.dat"; #11 PAD (0xb); #12 PARAM (0xc) "param.bin"; #13 EFS (0xd) "efs.img.ext4"; #14 MODEMST1 (0xe) "nvrebuild1.bin"; #15 MODEMST2 (0xf) "nvrebuild2.bin"; #16 BOOT (0x10) "boot.img"; #17 RECOVERY (0x11) "recovery.img"; #18 FOTA (0x12)
+
+file kernel boot.img
+boot.img: Android bootimg, kernel, ramdisk, page size: 2048, cmdline (console=null androidboot.hardware=qcom user_debug=23 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci)
+
+file kernel recovery.img
+recovery.img: Android bootimg, kernel, ramdisk, page size: 2048, cmdline (console=null androidboot.hardware=qcom user_debug=23 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci)
+
+file kernel system.img.ext4
+system.img.ext4: Android sparse image, version: 1.0, Total of 430080 4096-byte output blocks in 2791 input chunks.
+
+file kernel cache.img.ext4
+cache.img.ext4: Android sparse image, version: 1.0, Total of 128000 4096-byte output blocks in 22 input chunks.
+
+file kernel persist.img.ext4
+persist.img.ext4: Android sparse image, version: 1.0, Total of 2048 4096-byte output blocks in 8 input chunks.
+
+file kernel aboot.mbn
+aboot.mbn: ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), statically linked, no section header
+
+file kernel hyp.mbn
+hyp.mbn: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), statically linked, no section header
+
+kernel modem.bin
+modem.bin: DOS/MBR boot sector, code offset 0x3c+2, OEM-ID "MSDOS5.0", sectors/cluster 32, root entries 512, Media descriptor 0xf8, sectors/FAT 17, sectors/track 63, heads 255, sectors 131072 (volumes > 32 MB), serial number 0xbc614e, unlabeled, FAT (16 bit)
+
+kernel NON-HLOS.bin
+NON-HLOS.bin: DOS/MBR boot sector, code offset 0x3c+2, OEM-ID "MSDOS5.0", sectors/cluster 32, root entries 512, Media descriptor 0xf8, sectors/FAT 17, sectors/track 63, heads 255, sectors 131072 (volumes > 32 MB), serial number 0xbc614e, unlabeled, FAT (16 bit)
+
+file kernel rpm.mbn
+rpm.mbn: ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), statically linked, no section header
+
+file kernel sbl1.mbn
+sbl1.mbn: ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), statically linked, no section header
+
+file kernel sec.dat
+sec.dat: data
+
+file kernel tz.mbn
+tz.mbn: ELF 64-bit LSB executable, ARM, version 1 (SYSV), statically linked, no section header
+ 
